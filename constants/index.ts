@@ -27,8 +27,25 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-6",
     },
-    image: "https://example.com/image1.jpg",
+    image: [
+      "/assets/Detail Images/image 19.svg",
+      "/assets/Detail Images/image 21.svg",
+      "/assets/Detail Images/image 22.svg",
+      "/assets/Detail Images/image 24.svg",
+    ],
     discount: "",
+    iconsUrl: [
+      "/assets/Icons/bed 1.svg",
+      "/assets/Icons/bathtub 1.svg",
+      "/assets/Icons/people 1.svg",
+    ],
+    description: [
+      "Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in the hot tub, and gazing out over incredible ocean views.",
+      "The Space",
+      "BEDROOM & BATHROOM",
+      "• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view",
+      "Perfect for families or groups seeking a premium getaway at $3200/night.",
+    ],
   },
   {
     name: "Mountain Escape Chalet",
@@ -47,6 +64,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image2.jpg",
     discount: "30",
+    description: [
+      "Enjoy breathtaking mountain views in Aspen, Colorado. This cozy chalet offers a fireplace, self check-in, and a 4.7-star guest rating.",
+      "Ideal for ski trips or relaxing retreats at $1800/night.",
+    ],
   },
   {
     name: "Cozy Desert Retreat",
@@ -65,6 +86,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image3.jpg",
     discount: "",
+    description: [
+      "A pet-friendly desert retreat in Palm Springs, California, with self check-in and beautiful desert views.",
+      "Highly rated at 4.92 stars, perfect for couples or small families at $1500/night.",
+    ],
   },
   {
     name: "City Lights Penthouse",
@@ -83,6 +108,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image4.jpg",
     discount: "15",
+    description: [
+      "Experience the vibrant city life in New York with this penthouse offering stunning city views, free WiFi, and 24h check-in.",
+      "Rated 4.85 stars, ideal for business or leisure at $4500/night.",
+    ],
   },
   {
     name: "Riverside Cabin",
@@ -101,6 +130,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image5.jpg",
     discount: "20",
+    description: [
+      "Relax by the riverside in Otago, New Zealand. This cabin features a private dock, free kayaks, and a 4.77-star rating.",
+      "Great for nature lovers at $2800/night.",
+    ],
   },
   {
     name: "Modern Beachfront Villa",
@@ -119,6 +152,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image6.jpg",
     discount: "",
+    description: [
+      "Enjoy a modern beachfront villa in Bali's Sidemen with a private pool and chef service.",
+      "Rated 4.95 stars, perfect for large groups at $5000/night.",
+    ],
   },
   {
     name: "Lakeside Chalet",
@@ -137,6 +174,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image7.jpg",
     discount: "10",
+    description: [
+      "Charming chalet by the lake in Banff, Alberta. Features mountain views, hiking trails, and a 4.65-star rating.",
+      "Ideal for outdoor enthusiasts at $2300/night.",
+    ],
   },
   {
     name: "Tropical Garden Villa",
@@ -155,6 +196,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image8.jpg",
     discount: "25",
+    description: [
+      "Relax in a tropical garden villa in Koh Samui, Thailand. Free parking, self check-in, and a 4.8-star rating.",
+      "A great choice for families at $2750/night.",
+    ],
   },
   {
     name: "Urban Loft",
@@ -173,6 +218,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image9.jpg",
     discount: "",
+    description: [
+      "Modern loft in the heart of Berlin, Germany. Enjoy free WiFi, 24h check-in, and a 4.6-star rating.",
+      "Perfect for city explorers at $2000/night.",
+    ],
   },
   {
     name: "Secluded Forest Cabin",
@@ -191,6 +240,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image10.jpg",
     discount: "40",
+    description: [
+      "Escape to a secluded forest cabin in Whistler, British Columbia. Hot tub, self check-in, and a 4.72-star rating.",
+      "Ideal for a peaceful retreat at $2600/night.",
+    ],
   },
   {
     name: "Cliffside Villa",
@@ -209,6 +262,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image11.jpg",
     discount: "50",
+    description: [
+      "Spectacular cliffside villa in Amalfi, Italy, with an infinity pool and sea views.",
+      "Rated 4.93 stars, perfect for luxury seekers at $6000/night.",
+    ],
   },
   {
     name: "Coastal Escape Villa",
@@ -227,6 +284,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image12.jpg",
     discount: "",
+    description: [
+      "Coastal villa in Queensland, Australia, with beachfront access, pet-friendly amenities, and free parking.",
+      "Rated 4.83 stars, great for families at $3400/night.",
+    ],
   },
   {
     name: "Historical Villa",
@@ -245,6 +306,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image13.jpg",
     discount: "35",
+    description: [
+      "Stay in a historical villa in Tuscany, Italy, with free breakfast and self check-in.",
+      "Rated 4.67 stars, perfect for a cultural escape at $2700/night.",
+    ],
   },
   {
     name: "Downtown Apartment",
@@ -263,6 +328,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image14.jpg",
     discount: "",
+    description: [
+      "Modern downtown apartment in Tokyo, Japan, with free WiFi and easy access to public transport.",
+      "Rated 4.81 stars, ideal for city stays at $2200/night.",
+    ],
   },
   {
     name: "Luxury Safari Lodge",
@@ -281,6 +350,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image15.jpg",
     discount: "20",
+    description: [
+      "Experience a luxury safari lodge in Mara, Tanzania, with guided tours and free breakfast.",
+      "Rated 4.97 stars, perfect for adventure seekers at $4500/night.",
+    ],
   },
   {
     name: "Countryside Cottage",
@@ -299,6 +372,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image16.jpg",
     discount: "25",
+    description: [
+      "Charming countryside cottage in Gloucestershire, UK, with a fireplace and self check-in.",
+      "Rated 4.58 stars, great for a peaceful escape at $1800/night.",
+    ],
   },
   {
     name: "Riverfront Mansion",
@@ -317,6 +394,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image17.jpg",
     discount: "30",
+    description: [
+      "Elegant riverfront mansion in Île-de-France, Paris, with a private garden and self check-in.",
+      "Rated 4.86 stars, ideal for luxury stays at $5000/night.",
+    ],
   },
   {
     name: "Ski Chalet",
@@ -335,6 +416,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image18.jpg",
     discount: "",
+    description: [
+      "Ski chalet in Zermatt, Switzerland, with mountain views, ski access, and a cozy fireplace.",
+      "Rated 4.75 stars, perfect for winter getaways at $3900/night.",
+    ],
   },
   {
     name: "Island Paradise Villa",
@@ -353,6 +438,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image19.jpg",
     discount: "60",
+    description: [
+      "Stunning island paradise villa in Victoria, Seychelles, with a private pool and chef service.",
+      "Rated 4.98 stars, the ultimate luxury at $6500/night.",
+    ],
   },
   {
     name: "Clifftop Retreat",
@@ -371,5 +460,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image20.jpg",
     discount: "",
+    description: [
+      "Clifftop retreat in Western Cape, South Africa, with ocean views, private pool, and self check-in.",
+      "Rated 4.78 stars, perfect for relaxing escapes at $4100/night.",
+    ],
   },
 ];
