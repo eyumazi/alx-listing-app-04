@@ -1,11 +1,9 @@
 import Card from "@/components/layout/Card";
 import { PROPERTYLISTINGSAMPLE } from "@/constants/index";
-import { FiltererContainer } from "@/components/Filterer";
 const PropertyPage = () => {
   return (
     <>
     <div className="bg-white shadow-md mb-4">
-      <FiltererContainer />
     </div>
       {PROPERTYLISTINGSAMPLE[0] && (
         <Card

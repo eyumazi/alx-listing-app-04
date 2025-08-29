@@ -35,3 +35,12 @@ export interface PropertyProps {
   description: string | string[];
   iconsUrl?: string[];
 }
+export interface PropertyCardProps {
+  title: string;
+  location: string;
+  price: string;
+  rating: number;
+  reviews: string[];
+  imageUrl: string;
+  iconsUrl: string[];
+}

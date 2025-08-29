@@ -1,32 +1,35 @@
-import Card from "@/components/layout/Card";
-import "../styles/globals.css";
-import Button from "@/components/layout/Button";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import PropertyCard from "@/components/property/PropertyCard";
+
 export default function Home() {
+  const [properties, setProperties] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        const response = await axios.get("/api/properties");
+        setProperties(response.data);
+      } catch (error) {
+        console.error("Error fetching properties:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProperties();
+  }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
   return (
-    <div>
-      <br />
-      <Card
-        title="Beautiful Apartment"
-        location="New York, NY"
-        price="$120/n"
-        rating={4.5}
-        reviews={["Top Villa", "Self Checkin", "Free Reschedule"]}
-        imageUrl="/assets/listing images/List 1.svg"
-        iconsUrl={[
-          "/assets/Icons/bed 1.svg",
-          "/assets/Icons/bathtub 1.svg",
-          "/assets/Icons/people 1.svg",
-        ]}
-      />
-      <div className="mt-10"></div>
-      <Button
-        label="Click me"
-        onClick={() => {
-          alert("You clicked a button");
-        }}
-        type="button"
-        className="Test-btn"
-      />
+    <div className="grid grid-cols-3 gap-4">
+      {properties.map((property) => (
+        <PropertyCard key={property.id} property={property} />
+      ))}
     </div>
   );
 }
